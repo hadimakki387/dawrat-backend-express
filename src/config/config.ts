@@ -2,7 +2,7 @@
 export const config = {
     env:"development",
     mongoose:{
-        url:"mongodb://127.0.0.1:27017/dawrat"
+        url:"mongodb+srv://hmakki387:Idlsisfs7$@cluster0.crk9sir.mongodb.net/dawrat"
     },
     port:8080
 }
