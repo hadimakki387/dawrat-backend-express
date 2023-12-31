@@ -44,10 +44,12 @@ exports.createUser = (0, catchAsync_1.default)((req, res) => __awaiter(void 0, v
     res.status(http_status_1.default.CREATED).send(user);
 }));
 const getUSer = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    res.send({
+    res
+        .json({
         name: "hadi",
         family: "makki",
-    });
+    })
+        .end();
 });
 exports.getUSer = getUSer;
 //# sourceMappingURL=user.controller.js.map
