@@ -4,7 +4,7 @@ import httpStatus from "http-status";
 import catchAsync from "../../utils/catchAsync";
 import { generateToken, saveToken } from "../token/token.service";
 import moment from "moment";
-import bcrypt from "bcryptjs"
+import bcrypt from "bcryptjs";
 
 export const createUser = catchAsync(async (req: Request, res: Response) => {
   const user = await userServices.createUser(req.body);
@@ -12,8 +12,10 @@ export const createUser = catchAsync(async (req: Request, res: Response) => {
 });
 
 export const getUSer = async (req: Request, res: Response) => {
-  res.send({
-    name: "hadi",
-    family: "makki",
-  });
+  res
+    .json({
+      name: "hadi",
+      family: "makki",
+    })
+    .end();
 };
